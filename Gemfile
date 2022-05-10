@@ -1,9 +1,13 @@
 source 'http://rubygems.org'
 
-ruby "2.6.6"
+ruby "3.0.3"
 
-gem 'rspec', '~> 3.8'
-gem 'cucumber', '2.0.0'
-
+gem 'rspec'
+gem 'cucumber'
 gem 'byebug'
 
+group :development do
+    gem 'guard'
+    gem 'guard-rspec'
+    gem 'pry'
+end
